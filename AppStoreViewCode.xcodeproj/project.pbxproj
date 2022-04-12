@@ -176,7 +176,6 @@
 				E531F9C973F453BB5B9C7786 /* Pods-AppStoreViewCode.debug.xcconfig */,
 				530303BA7C7EA39AEFB51BFA /* Pods-AppStoreViewCode.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};

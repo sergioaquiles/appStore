@@ -10,7 +10,6 @@ import SDWebImage
 
 class SearchCell: UITableViewCell {
     
-    
     var app: App! {
         didSet {
             
@@ -18,12 +17,19 @@ class SearchCell: UITableViewCell {
             companyLabel.text = app.empresa
             
             iconImageView.sd_setImage(with: URL(string: app.iconeUrl), completed: nil)
-            if let screenshotsUrls = app.screensShotURls {
-                if screenshotsUrls.count > 0 {
-                    
+            
+            if let screenshotUrls = app.screensShotURls {
+                if screenshotUrls.count > 0 {
+                    print(screenshotUrls[0])
+                    self.screenShot1.sd_setImage(with: URL(string: screenshotUrls[0]), completed: nil)
+                }
+                if screenshotUrls.count > 1 {
+                    self.screenShot2.sd_setImage(with: URL(string: screenshotUrls[1]), completed: nil)
+                }
+                if screenshotUrls.count > 2 {
+                    self.screenShot2.sd_setImage(with: URL(string: screenshotUrls[2]), completed: nil)
                 }
             }
-            
         }
     }
     

@@ -6,6 +6,13 @@
 	<dict>
 		<key>NSExceptionDomains</key>
 		<dict>
+			<key>appStore/v1/public/upload/screenshots</key>
+			<dict>
+				<key>NSExceptionAllowsInsecureHTTPLoads</key>
+				<true/>
+				<key>NSIncludesSubdomains</key>
+				<true/>
+			</dict>
 			<key>localhost/appStore/v1/</key>
 			<dict>
 				<key>NSExceptionAllowsInsecureHTTPLoads</key>
